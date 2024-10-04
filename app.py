@@ -1,3 +1,4 @@
-from DroneDetection.logger import logging
+from DroneDetection.pipeline.training_pipeline import TrainPipeline
 
-logging.info("Hello World")
+obj = TrainPipeline()
+obj.run_pipeline()

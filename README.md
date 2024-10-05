@@ -8,9 +8,10 @@
 https://www.kaggle.com/code/someet2405/yolo-drone-vid/notebook
 ### Link to the Dataset
 https://drive.google.com/file/d/1Aqu0pXm_fk4zdxwLeHSFI_LNFHBlulkS/view?usp=drive_link
+
 -----------------------------------------------
-## Created a simple webapp which you can run loccaly to predict on new images or videos
-**a simple web application built using Streamlit that allows you to upload an image or video, use a YOLOv8 model to run object detection, and download the processed result. The application supports both image and video inputs.**
+## Created a webapp which you can run loccaly to predict on new images or videos
+**a web application built using Streamlit that allows you to upload an image or video, use a YOLOv8 model to run object detection, and download the processed result. The application supports both image and video inputs.**
 ## Features
 
 - **Image Prediction**: Upload an image (JPG, JPEG, PNG) and get predictions from the YOLOv8 model.

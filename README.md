@@ -6,6 +6,9 @@
 
 ### Link to the notebook
 https://www.kaggle.com/code/someet2405/yolo-drone-vid/notebook
+### Link to the Dataset
+https://drive.google.com/file/d/1Aqu0pXm_fk4zdxwLeHSFI_LNFHBlulkS/view?usp=drive_link
+
 # Step 1: Data Collection and Preprocessing
 ---------------------------------------------
 - Collect a dataset containing images or video frames with small drones as the target objects. Annotating these datasets with bounding boxes indicating the location of drones.

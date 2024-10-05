@@ -8,8 +8,46 @@
 https://www.kaggle.com/code/someet2405/yolo-drone-vid/notebook
 ### Link to the Dataset
 https://drive.google.com/file/d/1Aqu0pXm_fk4zdxwLeHSFI_LNFHBlulkS/view?usp=drive_link
+-----------------------------------------------
+## Created a simple webapp which you can run loccaly to predict on new images or videos
+**a simple web application built using Streamlit that allows you to upload an image or video, use a YOLOv8 model to run object detection, and download the processed result. The application supports both image and video inputs.**
+## Features
 
-# Step 1: Data Collection and Preprocessing
+- **Image Prediction**: Upload an image (JPG, JPEG, PNG) and get predictions from the YOLOv8 model.
+- **Video Prediction**: Upload a video (MP4, AVI, MOV) and get predictions frame-by-frame from the YOLOv8 model.
+- **Download Processed Files**: After prediction, you can download the processed image or video.
+
+## Prerequisites
+1. **Clone the repository:**
+
+```
+git clone https://github.com/Someet-Git/End-to-end-drone-detection
+cd yolov8-streamlit-app
+```
+2. **Before you start, ensure you have the following installed on your system:**
+
+- **Python 3.8 or above**
+- **pip** (Python package installer)
+- **Virtual Environment** (optional, but recommended)
+```
+python -m venv venv
+source venv/bin/activate      # On macOS/Linux
+.\venv\Scripts\activate       # On Windows
+```
+3. **Install Required Python Packages**
+```
+pip install -r requirements.txt
+```
+4. **Run the drone_webapp.py:**
+```
+streamlit run drone_webapp.py
+```
+Once the app is running, it will provide a local URL in the terminal (usually something like http://localhost:8501).
+Open this link in your web browser to use the application.
+
+Below is the steps taken for Model Traning
+---------------------------------------------
+## Step 1: Data Collection and Preprocessing
 ---------------------------------------------
 - Collect a dataset containing images or video frames with small drones as the target objects. Annotating these datasets with bounding boxes indicating the location of drones.
 Then preprocessing the dataset by resizing images to a fixed size, normalizing pixel values, and augmenting data to increase dataset diversity (e.g., rotation, flipping, scaling).
@@ -18,7 +56,7 @@ Then preprocessing the dataset by resizing images to a fixed size, normalizing p
 - I also collected a separate test data which contains around 163 images to see the performance of the fine tuned model.
 
 -----------------------------------------
-# Step 2: Network Architecture
+## Step 2: Network Architecture
 - Now Design a CNN architecture suitable for small object detection and tracking. We can base our design on popular architectures like YOLO (You Only Look Once), SSD (Single Shot MultiBox Detector), or Faster R-CNN (Region-based Convolutional Neural Networks).
 - After that we have to ensure that the architecture is lightweight and optimized for real-time performance on devices like drones. This may involve reducing the number of layers, using smaller filter sizes, or employing depthwise separable convolutions.
 
@@ -41,7 +79,7 @@ And the model that I was traing consist of 295 layers and around 25856899 parame
 
 ------------------------------------------
 
-# Step 3: Evaluation
+## Step 3: Evaluation
 - Evaluate the trained model on a separate test set to assess its performance in terms of detection accuracy, tracking stability, and real-time inference speed.
 - Then I computed metrics like precision, recall, F1-score, and Confusion matric to see the how the model predicted on the validation and test images. 
 - Then I analyze the results and iteratively refine the model architecture and training process based on the observed performance.
@@ -49,7 +87,7 @@ And the model that I was traing consist of 295 layers and around 25856899 parame
 - access the confusion matrix in `working/runs/detect/train/confusion_matrix.png`
 - 
 ------------------------------------------
-# Step 4: Prediction on Image and Video data
+## Step 4: Prediction on Image and Video data
 - The predictions from Model can be found on the `Predict4` folder
 ![image](https://github.com/Someet-Git/yolo_drone_detection/blob/Main/predict4/00475_jpg.rf.b6113f88c935a14e766529ee47ba1ecb.jpg?raw=true)
 - After that I uploaded 2 video from the youtube to see how the model performs.

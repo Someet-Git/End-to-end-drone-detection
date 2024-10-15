@@ -14,8 +14,8 @@ https://drive.google.com/file/d/1Aqu0pXm_fk4zdxwLeHSFI_LNFHBlulkS/view?usp=drive
 **a web application built using Streamlit that allows you to upload an image or video, use a Finetuned YOLOv8 model to run object detection, and download the processed result. The application supports both image and video inputs.**
 ## Features
 
-- **Image Prediction**: Upload an image (JPG, JPEG, PNG) and get predictions from the YOLOv8 model.
-- **Video Prediction**: Upload a video (MP4, AVI, MOV) and get predictions frame-by-frame from the YOLOv8 model.
+- **Image Prediction**: Upload an image (JPG, JPEG, PNG) and get predictions from the model.
+- **Video Prediction**: Upload a video (MP4, AVI, MOV) and get predictions frame-by-frame from the model.
 - **Download Processed Files**: After prediction, you can download the processed image or video.
 
 ## Prerequisites

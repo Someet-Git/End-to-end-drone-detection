@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 # Load YOLO model
-model = YOLO('/home/someet_unix/streamlit_projects/End-to-end-drone-detection/yolo/my_model.pt')
+model = YOLO('my_model.pt')
 
 # Streamlit app title
 st.title("YOLOv8 Image and Video Prediction Web App")

@@ -4,6 +4,8 @@
   - Let's understand how we collected the dataset and trained the CNN->(Convulation Neural Network) model on that dataset and predict the drones or small drones present in the images and videos.
   - We can also use the saved model after the training to predict the drones in any any type of input either live video streams from cameras, or recorded videos.
 
+### Live deployed link
+https://small-drone-detection.streamlit.app/
 ### Link to the notebook
 https://www.kaggle.com/code/someet2405/yolo-drone-vid/notebook
 ### Link to the Dataset
